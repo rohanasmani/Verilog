@@ -1,4 +1,4 @@
-//using gate level modelling
+## CODE 
 
 module fulladder(x,y,z,s,c);
 input x,y,z;
