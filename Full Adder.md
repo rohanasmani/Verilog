@@ -1,4 +1,5 @@
-## CODE 
+# CODE
+### Gate level modelling
 ```verilog
 module fulladder(x,y,z,s,c);
 input x,y,z;
