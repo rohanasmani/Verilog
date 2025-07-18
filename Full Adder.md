@@ -1,4 +1,5 @@
 //using gate level modelling
+
 module fulladder(x,y,z,s,c);
 input x,y,z;
 output s,c;
