@@ -1,5 +1,5 @@
 ## CODE 
-
+```verilog
 module fulladder(x,y,z,s,c);
 input x,y,z;
 output s,c;
@@ -10,4 +10,4 @@ and a1(w2,x,y);
 and a2(w3,w1,z);
 or o1(c,w3,w2);
 endmodule
-
+```
