@@ -1,6 +1,6 @@
 # CODE
 ### Gate level modelling
-```verilog
+```Verilog
 module fulladder(x,y,z,s,c);
 input x,y,z;
 output s,c;
@@ -13,7 +13,7 @@ or o1(c,w3,w2);
 endmodule
 ```
 ### Data Flow level Modeling
-```verilog
+```Verilog
 module full_adder (x, y, cin, cout, sum); 
 input x; 
 input y; 
@@ -24,3 +24,27 @@ assign cout=(x&y) | (x &cin) | (y & cin);
 assign sum= x ^ y ^cin; 
 endmodule
 ```
+### Test Bench
+``` Verilog
+module tb1();
+  reg x,y,z;
+  wire c,s;
+  fa f1(x,y,z,s,c);
+  initial 
+  begin
+    x=1'b1;
+    #10;
+    x=1'b1;
+    y=1'b0;
+    #10;
+    x=1'b1;
+    y=1'b0;
+    z=1'b0;
+    #10
+    x=1'b0;
+    y=1'b1;
+    z=1'b1;
+  end 
+endmodule
+```
+
