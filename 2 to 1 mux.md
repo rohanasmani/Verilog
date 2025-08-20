@@ -9,5 +9,5 @@ module mux(s0,i0,i1,y);
   and (w3,w1,i1);
   or (y,w2,w3);
   endmodule
-  ```
+```
   
