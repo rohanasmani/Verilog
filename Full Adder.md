@@ -12,3 +12,15 @@ and a2(w3,w1,z);
 or o1(c,w3,w2);
 endmodule
 ```
+### Data Flow level Modeling
+```verilog
+module full_adder (x, y, cin, cout, sum); 
+input x; 
+input y; 
+input cin; 
+output cout; 
+output sum; 
+assign cout=(x&y) | (x &cin) | (y & cin); 
+assign sum= x ^ y ^cin; 
+endmodule
+```
