@@ -1,3 +1,5 @@
+### Gate Level Modelling
+```verilog
 module mux(s1,s0,i0,i1,i2,i3,y);
   input s1,s0,i0,i1,i2,i3;
   output y;
@@ -9,5 +11,6 @@ module mux(s1,s0,i0,i1,i2,i3,y);
   and (w5,w2,s1,i2);
   and (w6,s0,s1,i3);
   or (y,w3,w4,w5,w6);
-  endmodule 
+  endmodule
+```
   
