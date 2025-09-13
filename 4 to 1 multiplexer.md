@@ -34,6 +34,7 @@ module mux(s1,s0,i0,i1,i2,i3,y);
 endmodule
  ```
 ### Behavioral Modelling
+```verilog
 module mux4to1 (d0,d1,d2,d3,sel,y);
     input  d0, d1, d2, d3,      
     input  [1:0] sel,           
@@ -48,5 +49,5 @@ module mux4to1 (d0,d1,d2,d3,sel,y);
         endcase
     end
 endmodule
-
+```
   
