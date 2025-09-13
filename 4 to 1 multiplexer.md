@@ -33,5 +33,20 @@ module mux(s1,s0,i0,i1,i2,i3,y);
   assign y = s1?(s0?i3:i2):(s0?i1:i0);
 endmodule
  ```
+### Behavioral Modelling
+module mux4to1 (d0,d1,d2,d3,sel,y);
+    input  d0, d1, d2, d3,      
+    input  [1:0] sel,           
+    output reg y                
+    always @(*) begin           
+        case (sel)
+            2'b00: y = d0;      
+            2'b01: y = d1;      
+            2'b10: y = d2;      
+            2'b11: y = d3;     
+            default: y = 1'b0;  
+        endcase
+    end
+endmodule
 
   
