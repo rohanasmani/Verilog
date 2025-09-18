@@ -15,3 +15,25 @@ module verification(clk,reset,counter,counter_up);
   assign counter = counter_up; 
 endmodule 
 ```
+### Testbench
+```verilog
+module upcounter_testbench(); 
+reg clk, reset; 
+wire [3:0] counter; 
+verification dut(clk, reset, counter); 
+initial  
+begin  
+clk = 1'b0; 
+forever #5 clk = ~clk;
+end 
+initial  
+begin 
+reset = 1'b1; 
+#20; 
+reset = 1'b0; 
+#500;  
+$finish; 
+end
+endmodule
+endmodule
+
