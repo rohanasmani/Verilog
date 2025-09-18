@@ -35,5 +35,4 @@ reset = 1'b0;
 $finish; 
 end
 endmodule
-endmodule
 
