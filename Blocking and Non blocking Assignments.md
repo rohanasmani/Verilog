@@ -1,4 +1,4 @@
-## 1. Register that can store 2-bit serial value with blocking and nonblocking assignment
+## Register that can store 2-bit serial value with blocking and nonblocking assignment
 ### Using Blocking assignment
 ```verilog
 module serial_reg_blocking (
